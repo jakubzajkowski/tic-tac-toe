@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Anton', sans-serif;
+}
+body{
+    background-color: aqua;
+}
+table{
+    width: 350px;
+    height: 350px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    margin: 50px auto 50px auto;
+}
+td,table{
+    border: 3px solid orange;
+    border-collapse: collapse;
+}
+td{
+    width: 80px;
+    height: 80px;
+}
+button{
+    margin: auto;
+}
+.game{
+    display: none;
+}
+.container{
+    position:absolute;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    left:0px;
+    background-color: rgb(9, 9, 22);
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+}
+.game_after{
+    width: 800px;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    height: 800px;
+    border-radius: 500px;
+    color: yellow;
+    background-color: rgb(9, 9, 22);
+    animation: game 2s ease-in forwards;
+    }
+.menu{
+    width: 800px;
+    text-align: center;
+    align-items: center;
+    height: 800px;
+    border-radius: 500px;
+    color: yellow;
+    background-color: rgb(9, 9, 22);
+}
+.menu_after{
+    width: 800px;
+    text-align: center;
+    align-items: center;
+    height: 800px;
+    border-radius: 500px;
+    color: yellow;
+    background-color: rgb(9, 9, 22);
+    animation: menu 2s ease-in forwards;
+}
+@keyframes game{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+@keyframes menu{
+    0%{
+        transform: scale(1);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+button{
+    width: 18%;
+    font-size: 22px;
+    background-color: transparent;
+    margin: 1% 1% 1% 1%;
+    cursor: pointer;
+}
+.menu button:hover{
+    transform: scale(1.1);
+}
+button:nth-child(2){
+    color: orange;
+    border: 5px solid orange;
+}
+button:nth-child(3){
+    color: aqua;
+    border: 5px solid aqua;
+}
+button:nth-child(4){
+    color: greenyellow;
+    border: 5px solid greenyellow;
+}
+.menu h1{
+    font-size: 35px;
+}
